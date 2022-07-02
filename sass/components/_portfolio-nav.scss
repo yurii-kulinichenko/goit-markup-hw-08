@@ -1,9 +1,14 @@
 .portfolio-nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   & :not(:last-child) {
     margin-right: 8px;
+  }
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+
+    
   }
 }
 
@@ -21,6 +26,7 @@
   color: var(--main-color);
   cursor: pointer;
   padding: 6px 22px;
+  margin-bottom: 21px;
   transition-property: background, box-shadow, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

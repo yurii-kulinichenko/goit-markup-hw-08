@@ -1,5 +1,9 @@
 .work {
   padding-top: 0;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .work__title {
@@ -14,6 +18,7 @@
 
 .work__item {
   position: relative;
+  max-width: 370px;
 }
 
 .work__text {
@@ -34,8 +39,7 @@
 
 .work__list {
   display: flex;
-  justify-content: space-between;
-  &:not(:last-child) {
+  & :not(:last-child) {
     margin-right: 30px;
   }
 }
