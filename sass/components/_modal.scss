@@ -21,11 +21,10 @@
   border-radius: 4px;
   padding: 40px;
   .backdrop.is-hidden & {
-    transform: translate(0) scale(0) rotate(180deg);
-  }
+    transform: translate(0) scale(0) rotate(180deg)};
   @media screen and (min-width: 480px) {
     width: 450px;    
-  }
+  };
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
